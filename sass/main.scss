@@ -1,0 +1,142 @@
+@import "./colors";
+@import "./components";
+@import "./animations";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	// font-family: 'Montserrat', sans-serif;
+	font-family: "Roboto Mono", monospace;
+	background-color: $main-color;
+	overflow-x: hidden;
+}
+
+// NAWIGACJA
+
+.nav {
+	position: absolute;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	&__item {
+		position: relative;
+		display: block;
+		margin: 0.5em 0;
+		padding: 0.5em 2em;
+		font-size: 3rem;
+		color: $grey-light;
+		text-decoration: none;
+	}
+}
+
+// STRONA GŁÓWNA
+
+.title {
+	position: absolute;
+    left: 2rem;
+	&__name {
+		position: relative;
+		font-weight: 200;
+		font-size: 74px;
+        color: $grey-light;
+        text-shadow: 1px 1px 2px;
+	}
+    &__background {
+        position: absolute;
+        top: 2rem;
+        left: 15rem;
+        font-size: 120px;
+        font-weight: bold;
+        color: $grey-dark;
+        z-index: -1;
+    }
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	// background-image: url(/img/kod1.jpg);
+	&__text {
+		height: 1400px;
+		width: 1400px;
+		position: relative;
+		animation: circularText 8s linear infinite;
+		right: -60%;
+		top: -20%;
+		span {
+			position: absolute;
+			transform-origin: 0 700px;
+			left: 50%;
+			font-family: "Montserrat", sans-serif;
+			font-size: 78px;
+			font-weight: bold;
+			text-transform: capitalize;
+			color: $grey-dark;
+		}
+	}
+}
+
+// SEKCJA O MNIE
+
+
+// FOOTER
+.footer {
+	color: $pure-white;
+	background-color: $secondary-color;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+
+	// .wrapper {
+	//     padding: 6em 2em 2em;
+	// }
+
+	// &__box {
+	//     font-size: 1.4rem;
+	// }
+
+	// &__box-desktop {
+	//     display: none;
+	// }
+
+	// &__box-title {
+	//     margin-bottom: 1em;
+	//     font-size: 3rem;
+	//     text-transform: uppercase;
+	// }
+
+	// &__box-social {
+	//     margin: 2em 0 1em;
+	// }
+
+	// &__box-link {
+	//     padding: 0 .3em;
+	//     font-size: 3.6rem;
+	//     color: $pure-white;
+	//     text-decoration: none;
+	//     transition: color .3s;
+
+	//     &:first-child {
+	//         padding-left: 0;
+	//     }
+
+	//     &:hover {
+	//         color: $light-white;
+	//     }
+	// }
+
+	// &__bottom-text {
+	//     padding: 2em;
+	//     text-align: center;
+	// }
+}
