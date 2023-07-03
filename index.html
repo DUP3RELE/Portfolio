@@ -10,40 +10,71 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&family=Roboto+Mono:wght@200;400;600&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7547607784.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <button class="burger-btn">
-        <div class="burger-btn__box">
-            <div class="burger-btn__bars"></div>
-        </div>
-    </button>
+    <section id="main" class="section">
+        <button class="burger-btn">
+            <div class="burger-btn__box">
+                <div class="burger-btn__bars"></div>
+            </div>
+        </button>
 
-    <nav class="nav">
-        <div class="nav__items">
-            <a href="#main" class="nav__item">Strona główna</a>
-            <a href="#about-me" class="nav__item">O mnie</a>
-            <a href="#projects" class="nav__item">Projekty</a>
-            <a href="#contact" class="nav__item">Kontakt</a>
-        </div>
-    </nav>
+        <nav class="nav">
+            <div class="nav__items">
+                <a href="#main" class="nav__item">Strona główna</a>
+                <a href="#about-me" class="nav__item">O mnie</a>
+                <a href="#projects" class="nav__item">Projekty</a>
+                <a href="#contact" class="nav__item">Kontakt</a>
+            </div>
+        </nav>
 
-    <header class="wrapper">
-        <div class="title">
-            <h1 class="title__name">Krystian Żywczak</h1>
-            <p class="title__background">Portfolio</p>
-        </div>
-        <div class="circle">
-            <p class="circle__text"></p>
-        </div>
+        <header class="wrapper">
+            <div class="title">
+                <h1 class="title__name">Krystian Żywczak</h1>
+                <p class="title__background">Portfolio</p>
+            </div>
+            <div class="circle">
+                <p class="circle__text"></p>
+            </div>
 
-    </header>
+        </header>
+    </section>
     <main>
+        <div class="top-arrow"></div>
+        <section id="about-me" class="section about-me-section">
+            <div class="wrapper">
+                <h1 class="AM-title">O mnie</h1>
+                <p class="AM-text">Nazywam się Krystian Żywczak. Przez ostatnie 10 lat pracowałem w branży
+                    gastronomicznej, zarówno jako kucharz, jak i szef kuchni. Przez ten czas zdobyłem duże doświadczenie
+                    w przygotowywaniu różnorodnych potraw i zarządzaniu zespołem kuchennym. Praca w gastronomii była dla
+                    mnie pasją i dawała wiele satysfakcji, ale ostatnio podjąłem decyzję o zmianie ścieżki kariery
+                    zawodowej.
+                    Skierowałem swoje zainteresowania w stronę programowania i budowy stron internetowych. Fascynuje
+                    mnie tworzenie pięknych i interaktywnych interfejsów użytkownika oraz tworzenie oprogramowania,
+                    które przynosi korzyści dla innych ludzi. Właśnie dlatego chciałbym pracować jako front-end
+                    developer.
+                    Zmiana ścieżki kariery może być ekscytująca i pełna wyzwań, ale jestem gotów na naukę i rozwój w tej
+                    dziedzinie. Cieszę się, że mogę wykorzystać moje umiejętności logicznego myślenia, kreatywności i
+                    precyzji w nowym zawodzie.</p>
+                <div class="icons"></div>
+            </div>
+            <div class="icons">
+                <i class="icons__icon fa-brands fa-html5"></i>
+                <i class="icons__icon fa-brands fa-css3-alt"></i>
+                <i class="icons__icon fa-brands fa-js"></i>
+                <i class="icons__icon fa-brands fa-github"></i>
+                <i class="icons__icon fa-brands fa-wordpress"></i>
+            </div>
+        </section>
+
+
 
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
 
         <div class="wrapper">
 
@@ -85,7 +116,7 @@
         <hr>
         <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Krystian Żywczak </p>
 
-    </footer>
+    </footer> -->
     <script src="/js/script.js"></script>
 </body>
 

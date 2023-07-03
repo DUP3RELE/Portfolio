@@ -6,3 +6,8 @@
         transform: rotate(-360deg);
     }
 }
+
+.nav__item:hover {
+    color: $dark;
+    background-color: $secondary-color;
+}

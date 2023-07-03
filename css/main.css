@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 @keyframes circularText {
@@ -12,6 +12,11 @@
     transform: rotate(-360deg);
   }
 }
+.nav__item:hover {
+  color: #2e2e2e;
+  background-color: #526D82;
+}
+
 *,
 *::before,
 *::after {
@@ -24,6 +29,10 @@ body {
   font-family: "Roboto Mono", monospace;
   background-color: #27374D;
   overflow-x: hidden;
+}
+
+.section {
+  height: 100vh;
 }
 
 .nav {
@@ -42,6 +51,8 @@ body {
   font-size: 3rem;
   color: #DDE6ED;
   text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .title {
@@ -75,7 +86,7 @@ body {
   height: 1400px;
   width: 1400px;
   position: relative;
-  animation: circularText 8s linear infinite;
+  animation: circularText 15s linear infinite;
   right: -60%;
   top: -20%;
 }
@@ -88,6 +99,41 @@ body {
   font-weight: bold;
   text-transform: capitalize;
   color: #9DB2BF;
+}
+
+.AM-title {
+  position: relative;
+  right: 40%;
+  margin: auto;
+  width: 150px;
+  height: 300px;
+  top: 1em;
+  font-size: 74px;
+  writing-mode: vertical-rl;
+  color: #526D82;
+}
+
+.AM-text {
+  position: relative;
+  font-size: 32px;
+  top: -7em;
+  margin-left: 300px;
+  color: #DDE6ED;
+}
+
+.icons {
+  position: relative;
+  width: 100%;
+  bottom: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #526D82;
+}
+.icons__icon {
+  font-size: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 .footer {

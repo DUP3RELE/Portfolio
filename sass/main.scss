@@ -16,6 +16,10 @@ body {
 	overflow-x: hidden;
 }
 
+.section {
+	height: 100vh;
+}
+
 // NAWIGACJA
 
 .nav {
@@ -33,6 +37,8 @@ body {
 		font-size: 3rem;
 		color: $grey-light;
 		text-decoration: none;
+		cursor: pointer;
+		transition: .3s;
 	}
 }
 
@@ -40,23 +46,23 @@ body {
 
 .title {
 	position: absolute;
-    left: 2rem;
+	left: 2rem;
 	&__name {
 		position: relative;
 		font-weight: 200;
 		font-size: 74px;
-        color: $grey-light;
-        text-shadow: 1px 1px 2px;
+		color: $grey-light;
+		text-shadow: 1px 1px 2px;
 	}
-    &__background {
-        position: absolute;
-        top: 2rem;
-        left: 15rem;
-        font-size: 120px;
-        font-weight: bold;
-        color: $grey-dark;
-        z-index: -1;
-    }
+	&__background {
+		position: absolute;
+		top: 2rem;
+		left: 15rem;
+		font-size: 120px;
+		font-weight: bold;
+		color: $grey-dark;
+		z-index: -1;
+	}
 }
 
 .circle {
@@ -69,7 +75,7 @@ body {
 		height: 1400px;
 		width: 1400px;
 		position: relative;
-		animation: circularText 8s linear infinite;
+		animation: circularText 15s linear infinite;
 		right: -60%;
 		top: -20%;
 		span {
@@ -86,7 +92,46 @@ body {
 }
 
 // SEKCJA O MNIE
-
+// .about-me-section {
+// 	// background-color: $main-color;
+// 	// // background-image: linear-gradient(315deg, $main-color 0%, $secondary-color 74%) ;
+// 	// background-image: url(/img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+// 	// background-size: 30%;
+// 	// background-repeat: no-repeat;
+// 	// background-position: 75% 60%;
+// }
+.AM-title {
+	position: relative;
+	right: 40%;
+	margin: auto;
+	width: 150px;
+	height: 300px;
+	top:1em;
+	font-size: 74px;
+	writing-mode: vertical-rl;
+	color: $secondary-color;
+}
+.AM-text {
+	position: relative;
+	font-size: 32px;
+	top: -7em;
+	margin-left: 300px;
+	color: $grey-light;
+}
+.icons {
+	position: relative;
+	width: 100%;
+	bottom: 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: $secondary-color;
+	&__icon {
+		font-size: 100px;
+		height: 100px;
+		width: 100px;
+	}
+}
 
 // FOOTER
 .footer {
