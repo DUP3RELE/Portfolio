@@ -38,7 +38,7 @@ body {
 		color: $grey-light;
 		text-decoration: none;
 		cursor: pointer;
-		transition: .3s;
+		transition: 0.3s;
 	}
 }
 
@@ -106,7 +106,7 @@ body {
 	margin: auto;
 	width: 150px;
 	height: 300px;
-	top:1em;
+	top: 1em;
 	font-size: 74px;
 	writing-mode: vertical-rl;
 	color: $secondary-color;
@@ -132,7 +132,38 @@ body {
 		width: 100px;
 	}
 }
+// Projekty
 
+.projects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	&__course {
+		background-color: red;
+		width: 300px;
+		height: 260px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	&__course .course-element {
+		display: none;
+	}
+	&__js {
+		background-color: yellow;
+		width: 300px;
+		height: 260px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	&__commercial {
+		background-color: blue;
+		width: 300px;
+		height: 260px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+}
 // FOOTER
 .footer {
 	color: $pure-white;

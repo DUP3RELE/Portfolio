@@ -136,6 +136,36 @@ body {
   width: 100px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.projects__course {
+  background-color: red;
+  width: 300px;
+  height: 260px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.projects__course .course-element {
+  display: none;
+}
+.projects__js {
+  background-color: yellow;
+  width: 300px;
+  height: 260px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.projects__commercial {
+  background-color: blue;
+  width: 300px;
+  height: 260px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .footer {
   color: #fff;
   background-color: #526D82;
