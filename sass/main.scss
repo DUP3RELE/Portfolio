@@ -113,7 +113,7 @@ body {
 }
 .AM-text {
 	position: relative;
-	font-size: 32px;
+	font-size: 22px;
 	top: -7em;
 	margin-left: 300px;
 	color: $grey-light;
@@ -121,7 +121,7 @@ body {
 .icons {
 	position: relative;
 	width: 100%;
-	bottom: 15%;
+	// bottom: 20%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -135,34 +135,91 @@ body {
 // Projekty
 
 .projects {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+	margin-left: 20em;
+	height: 100%;
+	// &__common {
+	// 	position: relative;
+	// 	width: 90%;
+	// 	height: 200px;
+	// 	border: 1px solid black;
+	// 	border-radius: 10px;
+	// 	top: -13rem;
+	// }
 
 	&__course {
-		background-color: red;
-		width: 300px;
-		height: 260px;
-		border: 1px solid black;
-		border-radius: 10px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: $secondary-color;
+		width: 90%;
+		height: 200px;
+		top: -13rem;
 	}
-	&__course .course-element {
-		display: none;
+	.course-element {
+		margin-top: auto;
+		bottom: 0;
+		height: 30px;
+		width: 500px;
+		background-color: #fff;
+		text-decoration: none;
+	}
+	.element-1 {
+		background-color: red;
+	}
+	.element-2 {
+		background-color: green;
 	}
 	&__js {
-		background-color: yellow;
-		width: 300px;
-		height: 260px;
-		border: 1px solid black;
-		border-radius: 10px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: $grey-dark;
+		width: 90%;
+		height: 200px;
+		top: -13rem;
+		&--box {
+			margin-top: auto;
+			bottom: 0;
+			height: 30px;
+			width: 500px;
+			background-color: #fff;
+		}
 	}
 	&__commercial {
-		background-color: blue;
-		width: 300px;
-		height: 260px;
-		border: 1px solid black;
-		border-radius: 10px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background-color: $grey-light;
+		width: 90%;
+		height: 200px;
+		top: -13rem;
+		&--box {
+			margin-top: auto;
+			bottom: 0;
+			height: 30px;
+			width: 5000px;
+			background-color: #fff;
+		}
 	}
+}
+.projects-text {
+	position: absolute;
+	width: 600px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 28px;
+}
+.element-text {
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	margin-top: 5px;
+	color: #000;
+	font-family: "Montserrat", sans-serif;
 }
 // FOOTER
 .footer {

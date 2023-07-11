@@ -4,6 +4,12 @@
   max-width: 1600px;
 }
 
+.break {
+  position: relative;
+  height: 5em;
+  width: 100vw;
+}
+
 @keyframes circularText {
   0% {
     transform: rotate(0deg);
@@ -115,7 +121,7 @@ body {
 
 .AM-text {
   position: relative;
-  font-size: 32px;
+  font-size: 22px;
   top: -7em;
   margin-left: 300px;
   color: #DDE6ED;
@@ -124,7 +130,6 @@ body {
 .icons {
   position: relative;
   width: 100%;
-  bottom: 15%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -137,33 +142,84 @@ body {
 }
 
 .projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  margin-left: 20em;
+  height: 100%;
 }
 .projects__course {
-  background-color: red;
-  width: 300px;
-  height: 260px;
-  border: 1px solid black;
-  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #526D82;
+  width: 90%;
+  height: 200px;
+  top: -13rem;
 }
-.projects__course .course-element {
-  display: none;
+.projects .course-element {
+  margin-top: auto;
+  bottom: 0;
+  height: 30px;
+  width: 500px;
+  background-color: #fff;
+  text-decoration: none;
+}
+.projects .element-1 {
+  background-color: red;
+}
+.projects .element-2 {
+  background-color: green;
 }
 .projects__js {
-  background-color: yellow;
-  width: 300px;
-  height: 260px;
-  border: 1px solid black;
-  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #9DB2BF;
+  width: 90%;
+  height: 200px;
+  top: -13rem;
+}
+.projects__js--box {
+  margin-top: auto;
+  bottom: 0;
+  height: 30px;
+  width: 500px;
+  background-color: #fff;
 }
 .projects__commercial {
-  background-color: blue;
-  width: 300px;
-  height: 260px;
-  border: 1px solid black;
-  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #DDE6ED;
+  width: 90%;
+  height: 200px;
+  top: -13rem;
+}
+.projects__commercial--box {
+  margin-top: auto;
+  bottom: 0;
+  height: 30px;
+  width: 5000px;
+  background-color: #fff;
+}
+
+.projects-text {
+  position: absolute;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+}
+
+.element-text {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  margin-top: 5px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer {
