@@ -155,6 +155,7 @@ body {
 		width: 90%;
 		height: 200px;
 		top: -13rem;
+		transition: 0.5s;
 	}
 	.course-element {
 		margin-top: auto;
@@ -163,6 +164,7 @@ body {
 		width: 500px;
 		background-color: #fff;
 		text-decoration: none;
+		transition: 0.5s;
 	}
 	.element-1 {
 		background-color: red;
@@ -185,6 +187,7 @@ body {
 			height: 30px;
 			width: 500px;
 			background-color: #fff;
+			transition: 0.5s;
 		}
 	}
 	&__commercial {
@@ -202,16 +205,20 @@ body {
 			height: 30px;
 			width: 5000px;
 			background-color: #fff;
+			transition: 0.5s;
+			background-image: url(/img/bird-small.png);
+			background-size: cover;
 		}
 	}
 }
 .projects-text {
 	position: absolute;
+	font-size: 28px;
 	width: 600px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 28px;
+	transition: 0.5s;
 }
 .element-text {
 	display: flex;
@@ -220,6 +227,22 @@ body {
 	margin-top: 5px;
 	color: #000;
 	font-family: "Montserrat", sans-serif;
+}
+// CONTACT
+.contact__info {
+	position: relative;
+	margin-left: 20em;
+	height: 100%;
+	background-color: $secondary-color;
+	width: 40%;
+	height: 600px;
+	top: -16rem;
+}
+.contact-icon {
+	display: flex;
+	margin: 3em;
+	justify-content: space-evenly;
+	font-size: 36px;
 }
 // FOOTER
 .footer {
