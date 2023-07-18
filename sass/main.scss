@@ -213,15 +213,25 @@ body {
 		bottom: 0;
 		height: 30px;
 		width: 500px;
-		background-color: #fff;
 		text-decoration: none;
 		transition: 0.5s;
 	}
+	.element-text {
+		color: $light-white;
+		text-shadow: 1px 1px 5px;
+	}
 	.element-1 {
-		background-color: red;
+		background-image: url(/img/responsywna-strona-internetowa.jpg);
+		background-position: center;
 	}
 	.element-2 {
-		background-color: green;
+		background-image: url(/img/tropical\ paradise.jpg);
+		background-position:center;
+		border: 1px solid black;
+	}
+	.element-3 {
+		background-image: url(/img/zaawansowana\ strona\ internetowa.jpg);
+		background-position: center;
 	}
 	&__js {
 		position: relative;
@@ -232,6 +242,11 @@ body {
 		width: 90%;
 		height: 200px;
 		top: -13rem;
+		&:hover {
+			.box-span {
+				display: block;
+			}
+		}
 		&--box {
 			margin-top: auto;
 			bottom: 0;
@@ -239,7 +254,18 @@ body {
 			width: 500px;
 			background-color: #fff;
 			transition: 0.5s;
+			
 		}
+	}
+	.box-even {
+		border: 1px solid black;
+		background-color: $grey-dark;
+	}
+	.box-span {
+		display: none;
+		margin: 15px 5px;
+		writing-mode: vertical-lr;
+		font-size: 13px;
 	}
 	&__commercial {
 		position: relative;
@@ -301,55 +327,7 @@ body {
 }
 // FOOTER
 .footer {
-	color: $pure-white;
-	background-color: $secondary-color;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-
-	// .wrapper {
-	//     padding: 6em 2em 2em;
-	// }
-
-	// &__box {
-	//     font-size: 1.4rem;
-	// }
-
-	// &__box-desktop {
-	//     display: none;
-	// }
-
-	// &__box-title {
-	//     margin-bottom: 1em;
-	//     font-size: 3rem;
-	//     text-transform: uppercase;
-	// }
-
-	// &__box-social {
-	//     margin: 2em 0 1em;
-	// }
-
-	// &__box-link {
-	//     padding: 0 .3em;
-	//     font-size: 3.6rem;
-	//     color: $pure-white;
-	//     text-decoration: none;
-	//     transition: color .3s;
-
-	//     &:first-child {
-	//         padding-left: 0;
-	//     }
-
-	//     &:hover {
-	//         color: $light-white;
-	//     }
-	// }
-
-	// &__bottom-text {
-	//     padding: 2em;
-	//     text-align: center;
-	// }
+	
 }
 
 @media (max-width: 768px) {
