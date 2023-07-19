@@ -40,14 +40,14 @@ rotateY = (mouseX / window.innerWidth - 0.5) * rotationValue
 cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
 }
 // Desktop CUBE
-const handleCubeMove = () => {
-    if (window.matchMedia("(max-width: 768px)")) {
-        CubeRotateX = 
-        CubeRotateY =
-    }
-}
+// const handleCubeMove = () => {
+//     if (window.matchMedia("(max-width: 768px)")) {
+//         // CubeRotateX = 
+//         // CubeRotateY =
+//         console.log('scroll', document.body.clientHeight);
+//     }
+// }
 
-
-handleCubeMove()
+// handleCubeMove()
 navBtn.addEventListener('click', handleNav)
 window.addEventListener('mousemove', handleMouseMove)
