@@ -2,6 +2,10 @@
 @import "./components";
 @import "./animations";
 
+:root {
+	--cube-size: 500px;
+	--cube-translateZ: 250px;
+}
 *,
 *::before,
 *::after {
@@ -161,6 +165,7 @@ body {
 	font-size: 74px;
 	writing-mode: vertical-rl;
 	color: $secondary-color;
+	z-index: 100;
 }
 .AM-text {
 	position: relative;
@@ -226,7 +231,7 @@ body {
 	}
 	.element-2 {
 		background-image: url(/img/tropical\ paradise.jpg);
-		background-position:center;
+		background-position: center;
 		border: 1px solid black;
 	}
 	.element-3 {
@@ -254,7 +259,6 @@ body {
 			width: 500px;
 			background-color: #fff;
 			transition: 0.5s;
-			
 		}
 	}
 	.box-even {
@@ -306,28 +310,117 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 // CONTACT
+
+.contact__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .contact__info {
 	position: relative;
-	margin-left: 20em;
 	height: 100%;
-	background-color: $secondary-color;
+	background-color: $grey-dark;
 	width: 40%;
 	height: 600px;
-	top: -16rem;
+	top: -14rem;
 }
 .contact-icon {
 	position: relative;
 	display: flex;
 	margin: 60px 0;
-	font-size: 36px;
-	top: 2em;
-	scale: 0.7;
+	font-size: 30px;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+}
+.links {
+	text-decoration: none;
+	color: black;
+}
+.rotating-cube-container {
+	perspective: 2000px;
+	&__cube {
+		position: relative;
+		width: var(--cube-size);
+		height: var(--cube-size);
+		transform-style: preserve-3d;
+		top: -12em;
+		margin-left: 8em;
+
+		&--face {
+			position: absolute;
+			width: var(--cube-size);
+			height: var(--cube-size);
+			font-size: 30px;
+			background: yellow;
+			color: black;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.front {
+		background-color: $secondary-color;
+		transform: translateZ(var(--cube-translateZ));
+	}
+	.back {
+		background-color: $secondary-color;
+		transform: rotateY(180deg) translateZ(var(--cube-translateZ));
+	}
+	.left {
+		background-color: $grey-light;
+		transform: rotateY(-90deg) translateZ(var(--cube-translateZ));
+	}
+	.right {
+		background-color: $grey-light;
+		transform: rotateY(90deg) translateZ(var(--cube-translateZ));
+	}
+	.top {
+		background-color: $grey-dark;
+		transform: rotateX(90deg) translateZ(var(--cube-translateZ));
+	}
+	.bottom {
+		background-color: $grey-dark;
+		transform: rotateX(-90deg) translateZ(var(--cube-translateZ));
+	}
 }
 // FOOTER
 .footer {
-	
+	color: $main-color;
+	background-color: $grey-light;
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+	&__box {
+		font-size: 1.4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		height: 100px;
+	}
+	&__box-list-item {
+			text-decoration: none;
+	}
+	&__box-desktop {
+		text-decoration: none;
+		margin-right: 1em;
+	}
+	&__box-title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+	&__box-link {
+		font-size: 3.6rem;
+		color: $main-color;
+		text-decoration: none;
+		transition: color 0.3s;
+		margin-right: 1em;
+		:hover {
+			color: $secondary-color;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -388,5 +481,22 @@ body {
 		top: 2em;
 		scale: 0.7;
 		margin: 60px 0;
+	}
+	.contact__wrapper {
+		display: block;
+	
+	}
+	.rotating-cube-container {
+		position: relative;
+		scale: 0.5;
+		top: -30em;
+		right: -4em;
+	}
+	.contact-icon {
+		justify-content: start;
+		align-items: start;
+	}
+	.footer__box-desktop {
+		display: none;
 	}
 }

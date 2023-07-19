@@ -113,27 +113,65 @@
         <div class="break"></div>
         <section id="contact" class="section">
             <h1 class="AM-title">Kontakt</h1>
-            <div class="wrapper">
+            <div class="wrapper contact__wrapper">
                 <div class="contact__info">
-                    <p class="contact-icon"><i class="fa-solid fa-envelope"></i>Fox90804@gmail.com</p>
-                    <p class="contact-icon"><i class="fa-solid fa-phone"></i> 690 938 651</p>
-                    <p class="contact-icon"><i class="fa-brands fa-square-facebook"></i> Facebook</p>
-                    <p class="contact-icon"><i class="fa-brands fa-square-instagram"></i> Instagram</p>
+                    <a class="links" href="mailto:fox90804@gmail.com">
+                        <p class="contact-icon"><i class="fa-solid fa-envelope"></i>Fox90804@gmail.com</p>
+                    </a>
+                    <a class="links" href="tel:690938651">
+                        <p class="contact-icon"><i class="fa-solid fa-phone"></i> 690 938 651</p>
+                    </a>
+                    <a class="links" href="https://www.facebook.com/BorsuczaStronaZycia">
+                        <p class="contact-icon"><i class="fa-brands fa-square-facebook"></i> Facebook</p>
+                    </a>
+                    <a class="links" href="https://www.instagram.com/kryst_zyw/">
+                        <p class="contact-icon"><i class="fa-brands fa-square-instagram"></i> Instagram</p>
+                    </a>
+                    <a class="links" href="https://github.com/DUP3RELE/Portfolio">
+                        <p class="contact-icon"><i class="fa-brands fa-github"></i> Github</p>
+                    </a>
                 </div>
-                <div class="contact_additional"></div>
+
+                <div class="rotating-cube-container">
+                    <div class="rotating-cube-container__cube">
+                        <div class="rotating-cube-container__cube--face front">Web design</div>
+                        <div class="rotating-cube-container__cube--face back">CSS/SCSS</div>
+                        <div class="rotating-cube-container__cube--face left">JavaScript</div>
+                        <div class="rotating-cube-container__cube--face right">Wordpress</div>
+                        <div class="rotating-cube-container__cube--face top">React(in progress)</div>
+                        <div class="rotating-cube-container__cube--face bottom">❤❤❤❤</div>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer class="footer">
-        <div class="footer__nav">
-            <a href="#main" class="">Strona główna</a>
-            <a href="#about-me" class="">O mnie</a>
-            <a href="#projects" class="">Projekty</a>
-            <a href="#contact" class="">Kontakt</a>
+        <div class="wrapper">
+            <div class="footer__boxes">
+                <h3 class="footer__box-title"><i class="fa-solid fa-code"></i></i> Krystian Żywczak -- Portfolio --</h3>
+                <p>Fajnie że wpadłeś! Jeśli masz jakieś sugestie lub chcesz się skontaktować - daj znać! -</p>
+                <div class="footer__box">
+                    <div class="footer__box-social">
+                        <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="footer__box-link"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#" class="footer__box-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="footer__box-desktop">
+                        <h3 class="footer__box-title">Nawigacja</h3>
+                        <ul class="footer__box-list">
+                            <li class="footer__box-list-item"><a href="#main">Strona główna</a></li>
+                            <li class="footer__box-list-item"><a href="#aboutme">O mnie</a></li>
+                            <li class="footer__box-list-item"><a href="#projects">Projekty</a></li>
+                            <li class="footer__box-list-item"><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer__contact"></div>
+        <hr>
+        <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Krystian Żywczak</p>
     </footer>
     <script src="/js/script.js"></script>
 </body>
