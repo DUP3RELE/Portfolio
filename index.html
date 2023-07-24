@@ -12,9 +12,11 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/7547607784.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
+    <script defer src="/js/script.js"></script>
 </head>
 
 <body>
+    <div id="scrollToTop" class="hidden">&#8593;</div>
     <section id="main" class="section">
         <button class="burger-btn">
             <div class="burger-btn__box">
@@ -36,7 +38,7 @@
                 <h1 class="title__name">Krystian Żywczak</h1>
                 <p class="title__background">Portfolio</p>
             </div>
-            <div class="circle">
+            <div class="circle scroll__hidden">
                 <p class="circle__text"></p>
             </div>
 
@@ -46,7 +48,7 @@
         <section id="about-me" class="section about-me-section">
             <h1 class="AM-title">O mnie</h1>
             <div class="wrapper">
-                <p class="AM-text">Nazywam się Krystian Żywczak. Przez ostatnie 10 lat pracowałem w branży
+                <p class="AM-text scroll__hidden">Nazywam się Krystian Żywczak. Przez ostatnie 10 lat pracowałem w branży
                     gastronomicznej, zarówno jako kucharz, jak i szef kuchni. Przez ten czas zdobyłem duże doświadczenie
                     w przygotowywaniu różnorodnych potraw i zarządzaniu zespołem kuchennym. Praca w gastronomii była dla
                     mnie pasją i dawała wiele satysfakcji, ale ostatnio podjąłem decyzję o zmianie ścieżki kariery
@@ -71,16 +73,19 @@
         <section class="section" id="projects">
             <h1 class="AM-title">Projekty</h1>
             <div class="wrapper">
-                <div class="projects">
+                <div class="projects scroll__hidden">
                     <div class="projects__course projects__common">
                         <h2 class="projects-text">Projekty utworzone podczas kursu</h2>
                         <div class="course-element element-1"><a class="element-text"
-                                href="/projects/Tropical Paradise/index.html" target="_blank" rel="noopener noreferrer">Tropical Paradise</a></div>
+                                href="/projects/Tropical Paradise/index.html" target="_blank"
+                                rel="noopener noreferrer">Tropical Paradise</a></div>
                         <div class="course-element element-2"><a class="element-text"
-                                href="/projects/responsywna strona internetowa/index.html" target="_blank" rel="noopener noreferrer">Responsywna strona
+                                href="/projects/responsywna strona internetowa/index.html" target="_blank"
+                                rel="noopener noreferrer">Responsywna strona
                                 internetowa</a></div>
                         <div class="course-element element-3"><a class="element-text"
-                                href="/projects/Zaawansowana strona internetowa/index.html" target="_blank" rel="noopener noreferrer">Zaawansowana strona
+                                href="/projects/Zaawansowana strona internetowa/index.html" target="_blank"
+                                rel="noopener noreferrer">Zaawansowana strona
                                 internetowa</a></div>
                     </div>
                     <div class="projects__js">
@@ -114,20 +119,23 @@
         <section id="contact" class="section">
             <h1 class="AM-title">Kontakt</h1>
             <div class="wrapper contact__wrapper">
-                <div class="contact__info">
+                <div class="contact__info scroll__hidden">
                     <a class="links" href="mailto:fox90804@gmail.com">
                         <p class="contact-icon"><i class="fa-solid fa-envelope"></i>Fox90804@gmail.com</p>
                     </a>
                     <a class="links" href="tel:690938651">
                         <p class="contact-icon"><i class="fa-solid fa-phone"></i> 690 938 651</p>
                     </a>
-                    <a class="links" href="https://www.facebook.com/BorsuczaStronaZycia" target="_blank" rel="noopener noreferrer">
+                    <a class="links" href="https://www.facebook.com/BorsuczaStronaZycia" target="_blank"
+                        rel="noopener noreferrer">
                         <p class="contact-icon"><i class="fa-brands fa-square-facebook"></i> Facebook</p>
                     </a>
-                    <a class="links" href="https://www.instagram.com/kryst_zyw/" target="_blank" rel="noopener noreferrer">
+                    <a class="links" href="https://www.instagram.com/kryst_zyw/" target="_blank"
+                        rel="noopener noreferrer">
                         <p class="contact-icon"><i class="fa-brands fa-square-instagram"></i> Instagram</p>
                     </a>
-                    <a class="links" href="https://github.com/DUP3RELE/Portfolio" target="_blank" rel="noopener noreferrer">
+                    <a class="links" href="https://github.com/DUP3RELE/Portfolio" target="_blank"
+                        rel="noopener noreferrer">
                         <p class="contact-icon"><i class="fa-brands fa-github"></i> Github</p>
                     </a>
                 </div>
@@ -154,9 +162,12 @@
                 <p>Fajnie że wpadłeś! Jeśli masz jakieś sugestie lub chcesz się skontaktować - daj znać! -</p>
                 <div class="footer__box">
                     <div class="footer__box-social">
-                        <a href="https://www.facebook.com/BorsuczaStronaZycia" target="_blank" rel="noopener noreferrer" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/kryst_zyw/" target="_blank" rel="noopener noreferrer" class="footer__box-link"><i class="fab fa-instagram-square"></i></a>
-                        <a href="https://github.com/DUP3RELE/Portfolio" target="_blank" rel="noopener noreferrer" class="footer__box-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/BorsuczaStronaZycia" target="_blank" rel="noopener noreferrer"
+                            class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/kryst_zyw/" target="_blank" rel="noopener noreferrer"
+                            class="footer__box-link"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://github.com/DUP3RELE/Portfolio" target="_blank" rel="noopener noreferrer"
+                            class="footer__box-link"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="footer__box-desktop">
                         <h3 class="footer__box-title">Nawigacja</h3>
@@ -173,7 +184,6 @@
         <hr>
         <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Krystian Żywczak</p>
     </footer>
-    <script src="/js/script.js"></script>
 </body>
 
 </html>

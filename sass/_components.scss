@@ -8,3 +8,21 @@
     height:5em;
     width: 100vw;
 }
+#scrollToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    font-size: 34px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: $secondary-color;
+    color: white;
+    border: 2px solid $grey-dark;
+    border-radius: 5%;
+    transition: opacity .3s;
+    z-index: 1000;
+  }
+  .hidden {
+    opacity: 0;
+    
+  }

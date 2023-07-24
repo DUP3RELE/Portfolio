@@ -13,6 +13,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-behavior: smooth;
+  }
 body {
 	// font-family: 'Montserrat', sans-serif;
 	font-family: "Roboto Mono", monospace;
@@ -84,6 +87,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	z-index: 5;
 	&__item {
 		position: relative;
 		display: block;
