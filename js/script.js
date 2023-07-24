@@ -3,6 +3,7 @@ const navBtn = document.querySelector(".burger-btn");
 const allNavItems = document.querySelectorAll(".nav__item");
 const cube = document.querySelector(".rotating-cube-container__cube");
 const scrollToTopBtn = document.querySelector("#scrollToTop");
+const scrollObject = document.querySelectorAll(".scroll__hidden");
 
 let mouseX = 0;
 let mouseY = 0;
@@ -79,8 +80,6 @@ const observer = new IntersectionObserver((entries) => {
 		}
 	});
 });
-
-const scrollObject = document.querySelectorAll(".scroll__hidden");
 
 scrollObject.forEach((el) => observer.observe(el));
 navBtn.addEventListener("click", handleNav);
