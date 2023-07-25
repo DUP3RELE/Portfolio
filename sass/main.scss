@@ -15,6 +15,7 @@
 }
 html {
 	scroll-behavior: smooth;
+	min-width: 100vw;
 }
 body {
 	// font-family: 'Montserrat', sans-serif;
@@ -129,6 +130,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	overflow: hidden;
 	// background-image: url(/img/kod1.jpg);
 	&__text {
 		height: 1400px;
