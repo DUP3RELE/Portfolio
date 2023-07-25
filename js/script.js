@@ -10,7 +10,23 @@ const scrollObject = document.querySelectorAll(".scroll__hidden");
 // let rotationCubeX = 0;
 // let rotationCubeY = 0;
 // const rotationValue = 200;
-
+// scroll-to-top arrow
+document.addEventListener("DOMContentLoaded", () => {
+	const scrollToTop = document.getElementById("scrollToTop");
+	window.addEventListener("scroll", () => {
+	  if (window.scrollY > document.documentElement.scrollHeight * 0.2) {
+		scrollToTop.classList.remove("hidden");
+	  } else {
+		scrollToTop.classList.add("hidden");
+	  }
+	});
+	
+	scrollToTop.addEventListener("click", () => {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		  
+	});
+  });
 // CRICLE
 const circleText = document.querySelector(".circle__text");
 const insideCircleText = "❤❤❤❤CSS-SASS-JavaScript-Wordpress";
@@ -78,27 +94,7 @@ const x = window.matchMedia("(max-width: 1200px)");
 widthCheck(x);
 x.addListener(widthCheck);
 
-// scroll-to-top arrow
-document.addEventListener("DOMContentLoaded", function () {
-	const scrollToTop = document.getElementById("scrollToTop");
-	window.addEventListener("scroll", function () {
-		if (window.scrollY > window.innerHeight * 0.2) {
-			scrollToTop.classList.remove("hidden");
-		} else {
-			scrollToTop.classList.add("hidden");
-		}
-	});
 
-	scrollToTop.addEventListener("click", function () {
-		function scrollToTopAnimation() {
-			if (window.scrollY > 0) {
-				window.scrollBy(0, -50);
-				requestAnimationFrame(scrollToTopAnimation);
-			}
-		}
-		scrollToTopAnimation();
-	});
-});
 // smooth on-scroll animations
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
