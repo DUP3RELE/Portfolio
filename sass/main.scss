@@ -3,8 +3,8 @@
 @import "./animations";
 
 :root {
-	--cube-size: 500px;
-	--cube-translateZ: 250px;
+	--cube-size: 400px;
+	--cube-translateZ: 200px;
 }
 *,
 *::before,
@@ -25,6 +25,7 @@ body {
 }
 .section {
 	height: 100vh;
+	width: 100vw;
 }
 
 // NAWIGACJA
@@ -84,16 +85,17 @@ body {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	height: 100vh;
+	height: 60vh;
+	bottom: 4em;
 	width: 100%;
 	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 	z-index: 5;
 	&__item {
 		position: relative;
 		display: block;
-		margin: 0.5em 0;
+		margin: 1em 0;
 		padding: 0.5em 2em;
-		font-size: 3rem;
+		font-size: 2rem;
 		color: $grey-light;
 		text-decoration: none;
 		cursor: pointer;
@@ -106,10 +108,11 @@ body {
 .title {
 	position: absolute;
 	left: 2rem;
+	top: 1em;
 	&__name {
 		position: relative;
 		font-weight: 200;
-		font-size: 74px;
+		font-size: 44px;
 		color: $grey-light;
 		text-shadow: 1px 1px 2px;
 	}
@@ -117,7 +120,7 @@ body {
 		position: absolute;
 		top: 2rem;
 		left: 15rem;
-		font-size: 120px;
+		font-size: 100px;
 		font-weight: bold;
 		color: $grey-dark;
 		z-index: -1;
@@ -130,18 +133,17 @@ body {
 	align-items: center;
 	height: 100vh;
 	&__text {
-		height: 1400px;
-		width: 1400px;
+		height: 600px;
+		width: 600px;
 		position: relative;
 		animation: circularText 15s linear infinite;
-		right: -60%;
-		top: -20%;
+		left: 23em;
 		span {
 			position: absolute;
-			transform-origin: 0 700px;
+			transform-origin: 0 300px;
 			left: 50%;
 			font-family: "Montserrat", sans-serif;
-			font-size: 78px;
+			font-size: 34px;
 			font-weight: bold;
 			text-transform: capitalize;
 			color: $grey-dark;
@@ -160,12 +162,12 @@ body {
 // }
 .AM-title {
 	position: relative;
-	right: 40%;
+	right: 45%;
 	margin: auto;
 	width: 150px;
 	height: 300px;
 	top: 1em;
-	font-size: 74px;
+	font-size: 64px;
 	writing-mode: vertical-rl;
 	color: $secondary-color;
 	z-index: 100;
@@ -173,16 +175,16 @@ body {
 .AM-text {
 	position: relative;
 	font-size: 22px;
-	top: -7em;
-	margin-left: 300px;
+	top: -10em;
+	width: 80vw;
+	margin-bottom: 0;
+	left: 10%;
 	color: $grey-light;
 }
 .icons {
 	position: relative;
-	width: 100%;
-	// bottom: 20%;
+	top: -7em;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-evenly;
 	color: $secondary-color;
 	&__icon {
@@ -194,16 +196,10 @@ body {
 // Projekty
 
 .projects {
-	margin-left: 20em;
-	height: 100%;
-	// &__common {
-	// 	position: relative;
-	// 	width: 90%;
-	// 	height: 200px;
-	// 	border: 1px solid black;
-	// 	border-radius: 10px;
-	// 	top: -13rem;
-	// }
+	margin-left: 15%;
+	height: 60vh;
+	width: 80%;
+	top: 0;
 
 	&__course {
 		position: relative;
@@ -213,7 +209,7 @@ body {
 		background-color: $secondary-color;
 		width: 90%;
 		height: 200px;
-		top: -13rem;
+		top: -15rem;
 		transition: 0.5s;
 	}
 	.course-element {
@@ -259,7 +255,7 @@ body {
 		background-color: $grey-dark;
 		width: 90%;
 		height: 200px;
-		top: -13rem;
+		top: -15rem;
 		&:hover {
 			.box-span {
 				display: block;
@@ -295,7 +291,7 @@ body {
 		background-color: $grey-light;
 		width: 90%;
 		height: 200px;
-		top: -13rem;
+		top: -15rem;
 		&--box {
 			margin-top: auto;
 			bottom: 0;
@@ -410,7 +406,7 @@ body {
 		padding: 6em 2em 2em;
 	}
 	&__box {
-		font-size: 1.4rem;
+		font-size: 14px;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
@@ -421,12 +417,14 @@ body {
 	}
 	&__box-desktop {
 		text-decoration: none;
-		margin-right: 1em;
+		margin-bottom: 10%;
+		margin-right: 5%;
 	}
 	&__box-title {
 		margin-bottom: 1em;
 		font-size: 3rem;
 		text-transform: uppercase;
+		width: 60%;
 	}
 	&__box-link {
 		font-size: 3.6rem;
@@ -445,14 +443,17 @@ body {
 		display: block;
 	}
 	.title {
-		scale: 0.4;
-		left: -10em;
+		scale: 0.5;
+		left: -5em;
 		// &__background {
 		// 	font-size: 33px;
 		// }
 	}
 	.circle {
-		scale: 0.3;
+		scale: 0.6;
+		&__text {
+			left: 0;
+		}
 	}
 	.nav {
 		// display: none;
@@ -462,61 +463,94 @@ body {
 		height: 100%;
 		background-color: $secondary-color;
 		z-index: 1;
+		bottom: 0;
 		&--active {
 			transform: translateX(0);
 		}
 	}
 	.AM-title {
 		transform: rotate(-90deg);
-		scale: 0.5;
-		left: -2em;
+		scale: 0.7;
+		left: -1em;
 		top: -1.1em;
 	}
 	.AM-text {
 		scale: 0.7;
-		margin-left: 5px;
-		top: -13em;
+		top: -14em;
+		left: 0;
+		width: 100vw;
+		font-size: 18px;
 	}
 	.icons {
-		scale: 0.8;
-		top: -23em;
+		top: -18em;
+		&__icon {
+			font-size: 70px;
+			width: 70px;
+			height: 70px;
+		}
 	}
 	.projects {
-		margin-top: 5em;
-		margin-left: 1em;
+		display: block;
+		margin-top: 2em;
+		margin-left: 15px;
+		width: 100%;
+		justify-content: center;
 	}
 	.projects-text {
 		font-size: 15px;
-		width: 200px;
+		width: 400px;
+		left: 60%;
+	}
+	.element-text {
+		font-size: 12px;
 	}
 	.contact__info {
-		margin-left: 2em;
-		width: 80%;
+		width: 90%;
+		margin-left: 10px;
+		height: 425px;
 	}
+	.links 
 	.contact-icon {
 		position: relative;
 		top: 2em;
-		scale: 0.7;
-		margin: 60px 0;
+		scale: 0.8;
+		margin: 25px 0;
 	}
 	.contact__wrapper {
 		display: block;
 	}
-	.rotating-cube-container {
+	.rotating-cube-container{
 		position: relative;
 		scale: 0.5;
-		top: -30em;
-		right: -4em;
+		top: -26em;
+		right: 1em;
 	}
 	.contact-icon {
 		justify-content: start;
 		align-items: start;
 	}
 	.footer {
+		height: 500px;
 		margin: 0;
+		&__box {
+			font-size: 1px;
+		}
+		&__box-title {
+			font-size: 18px;
+		}
+		&__box-social {
+			height: 50px;
+		}
+		&__bottom-text {
+			bottom: 0;
+		}
 	}
 	.footer__box-desktop {
 		display: none;
+	}
+	.hidden {
+		opacity: 1;
+		transform: translate(0);
 	}
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -524,11 +558,11 @@ body {
 		display: block;
 	}
 	.title {
-		scale: 0.4;
-		left: -10em;
+		scale: 0.7;
+		left: 0;
 	}
 	.circle {
-		scale: 0.7;
+		scale: 0.8;
 	}
 	.nav {
 		// display: none;
@@ -536,51 +570,75 @@ body {
 		transform: translateX(100%);
 		width: 100%;
 		height: 100%;
+		justify-content: center;
+		bottom: 0;
 		background-color: $secondary-color;
-		z-index: 1;
+		z-index: 1000;
+		&__item {
+			margin: 20px 0;
+			font-size: 36px;
+		}
 		&--active {
 			transform: translateX(0);
 		}
 	}
 	.AM-title {
 		transform: rotate(-90deg);
-		left: -2em;
+		left: -4em;
 		top: -0.5em;
 	}
 	.AM-text {
 		margin-top: 2em;
 		scale: 0.9;
 		margin-left: 5px;
+		font-size: 20px;
+		margin-bottom: 5px;
 	}
 	.projects {
-		margin-top: 5em;
-		margin-left: 2em;
+		scale: 0.8;
+		width: 100%;
+		justify-content: center;
+		margin-left: -1em;
+	}
+	.icons {
+		top: -12em;
+		scale: 0.8;
 	}
 	.contact__info {
 		position: relative;
-		margin-left: 7em;
-		top: -5em;
-		width: 80%;
+		margin-left: 1em;
+		width: 90%;
 	}
 	.contact-icon {
 		position: relative;
-		top: 2em;
-		scale: 0.7;
-		margin: 60px 0;
+		scale: 0.9;
+		margin: 60px 10px;
 	}
 	.rotating-cube-container {
 		position: relative;
-		scale: 0.7;
-		top: -1em;
-		right: 1em;
+		scale: 0.9;
+		top: -4em;
+		right: 7em;
 	}
 	.contact-icon {
 		top: 0;
+		margin-right: 2px;
 		justify-content: start;
 		align-items: start;
 	}
 	.footer {
 		margin: 0;
+		&__box {
+			&-social {
+				scale: 0.9;
+			}
+			&-title {
+				font-size: 20px;
+			}
+		}
+	}
+	.footer .wrapper {
+		padding: 2em;
 	}
 	.footer__box-desktop {
 		display: none;
