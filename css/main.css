@@ -538,7 +538,7 @@ body {
   color: #526D82;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 1px) and (max-width: 896px) {
   .burger-btn {
     display: block;
   }
@@ -694,7 +694,7 @@ body {
     transform: translate(0);
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 897px) and (max-width: 1200px) {
   .burger-btn {
     display: block;
   }
