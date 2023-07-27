@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 // CRICLE
 const circleText = document.querySelector(".circle__text");
-const insideCircleText = "❤❤❤❤CSS-SASS-JavaScript-Wordpress";
+const insideCircleText = "-REACT-CSS-SASS-JavaSCR-Wordpress";
 
 window.onload = () => {
 	for (let i = 0; i < insideCircleText.length; i++) {

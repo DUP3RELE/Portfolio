@@ -14,8 +14,8 @@
 	padding: 0;
 }
 html {
+	width: 100vw;
 	scroll-behavior: smooth;
-	max-width: 100vw;
 }
 body {
 	// font-family: 'Montserrat', sans-serif;
@@ -26,6 +26,8 @@ body {
 .section {
 	height: 100vh;
 	width: 100vw;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
 }
 
@@ -163,8 +165,6 @@ body {
 // }
 .AM-title {
 	position: relative;
-	right: 45%;
-	margin: auto;
 	width: 150px;
 	height: 300px;
 	top: 1em;
@@ -179,7 +179,7 @@ body {
 	top: -10em;
 	width: 80vw;
 	margin-bottom: 0;
-	left: 10%;
+	left: 12%;
 	color: $grey-light;
 }
 .icons {
@@ -446,15 +446,17 @@ body {
 	.title {
 		scale: 0.5;
 		left: -5em;
-		// &__background {
-		// 	font-size: 33px;
-		// }
+		top: 2em;
 	}
 	.circle {
 		scale: 0.6;
 		&__text {
+			top: 3em;
 			left: 0;
 		}
+	}
+	.burger-btn__bars {
+		scale: 0.8;
 	}
 	.nav {
 		// display: none;
@@ -469,61 +471,99 @@ body {
 			transform: translateX(0);
 		}
 	}
+	.title__background {
+		left: 0;
+	}
 	.AM-title {
 		transform: rotate(-90deg);
 		scale: 0.7;
-		left: -1em;
 		top: -1.1em;
+		left: 1em;
 	}
 	.AM-text {
 		scale: 0.7;
-		top: -14em;
-		left: 0;
+		top: -18em;
+		left: -2em;
 		width: 100vw;
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.icons {
-		top: -18em;
+		top: -19em;
 		&__icon {
-			font-size: 70px;
-			width: 70px;
-			height: 70px;
+			font-size: 50px;
+			width: 50px;
+			height: 50px;
 		}
 	}
 	.projects {
 		display: block;
 		margin-top: 2em;
-		margin-left: 15px;
+		margin-left: -1em;
 		width: 100%;
 		justify-content: center;
+		&__course {
+			width: 110%;
+			height: 150px;
+			margin-bottom: 1px;
+			top: -14rem;
+		}
+		&__js {
+			width: 110%;
+			height: 150px;
+			top: -14rem;
+		}
+		&__commercial {
+			width: 110%;
+			height: 150px;
+			top: -14rem;
+		}
 	}
 	.projects-text {
 		font-size: 15px;
 		width: 400px;
-		left: 60%;
+		left: 70%;
+	}
+	.projects__common:hover {
+		.projects-text {
+			transition: 0.3s;
+			opacity: 0;
+		}
+	}
+	.projects__js:hover {
+		.projects-text {
+			opacity: 0;
+		}
+	}
+	.projects__commercial:hover {
+		.projects-text {
+			display: none;
+		}
 	}
 	.element-text {
 		font-size: 12px;
 	}
 	.contact__info {
-		width: 90%;
-		margin-left: 10px;
+		width: 100%;
 		height: 425px;
 	}
-	.links 
-	.contact-icon {
+	.links .contact-icon {
 		position: relative;
 		top: 2em;
-		scale: 0.8;
+		scale: 0.7;
 		margin: 25px 0;
 	}
 	.contact__wrapper {
 		display: block;
 	}
-	.rotating-cube-container{
+	.rotating-cube-container {
+		&__cube {
+			top: -16em;
+			left: 8em;
+			z-index: 1;
+		}
 		position: relative;
 		scale: 0.5;
-		top: -26em;
+		top: -20em;
 		right: 1em;
 	}
 	.contact-icon {
@@ -533,6 +573,7 @@ body {
 	.footer {
 		height: 500px;
 		margin: 0;
+		z-index: -1;
 		&__box {
 			font-size: 1px;
 		}
@@ -541,6 +582,13 @@ body {
 		}
 		&__box-social {
 			height: 50px;
+			display: inline;
+		}
+		&__box-link {
+			height: 50px;
+			width: 50px;
+			font-size: 50px;
+			margin: 15px;
 		}
 		&__bottom-text {
 			bottom: 0;
@@ -559,6 +607,7 @@ body {
 		display: block;
 	}
 	.title {
+		top: 1em;
 		scale: 0.7;
 		left: 0;
 	}
