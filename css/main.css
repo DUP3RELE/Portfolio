@@ -398,6 +398,7 @@ body {
   background-color: #fff;
   transition: 0.5s;
   background-image: url(/img/bird-small.png);
+  filter: grayscale(100%);
   background-size: cover;
   cursor: pointer;
 }
@@ -538,7 +539,96 @@ body {
   color: #526D82;
 }
 
-@media screen and (min-width: 1px) and (max-width: 896px) {
+@media screen and (min-width: 1091px) and (max-width: 1200px) {
+  .burger-btn {
+    display: block;
+  }
+  .title {
+    top: 1em;
+    scale: 0.7;
+    left: 0;
+  }
+  .circle {
+    scale: 0.8;
+  }
+  .nav {
+    position: fixed;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    bottom: 0;
+    background-color: #526D82;
+    z-index: 1000;
+  }
+  .nav__item {
+    margin: 20px 0;
+    font-size: 36px;
+  }
+  .nav--active {
+    transform: translateX(0);
+  }
+  .AM-title {
+    transform: rotate(-90deg);
+    left: -4em;
+    top: -0.5em;
+  }
+  .AM-text {
+    margin-top: 2em;
+    scale: 0.9;
+    margin-left: 5px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .projects {
+    scale: 0.8;
+    width: 100%;
+    justify-content: center;
+    margin-left: -1em;
+  }
+  .icons {
+    top: -12em;
+    scale: 0.8;
+  }
+  .contact__info {
+    position: relative;
+    margin-left: 1em;
+    width: 90%;
+  }
+  .contact-icon {
+    position: relative;
+    scale: 0.9;
+    margin: 60px 10px;
+  }
+  .rotating-cube-container {
+    position: relative;
+    scale: 0.9;
+    top: -4em;
+    right: 7em;
+  }
+  .contact-icon {
+    top: 0;
+    margin-right: 2px;
+    justify-content: start;
+    align-items: start;
+  }
+  .footer {
+    margin: 0;
+  }
+  .footer__box-social {
+    scale: 0.9;
+  }
+  .footer__box-title {
+    font-size: 20px;
+  }
+  .footer .wrapper {
+    padding: 2em;
+  }
+  .footer__box-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 1090px) {
   .burger-btn {
     display: block;
   }
@@ -629,7 +719,7 @@ body {
     opacity: 0;
   }
   .projects__commercial:hover .projects-text {
-    display: none;
+    opacity: 0;
   }
   .element-text {
     font-size: 12px;
@@ -692,94 +782,5 @@ body {
   .hidden {
     opacity: 1;
     transform: translate(0);
-  }
-}
-@media (min-width: 897px) and (max-width: 1200px) {
-  .burger-btn {
-    display: block;
-  }
-  .title {
-    top: 1em;
-    scale: 0.7;
-    left: 0;
-  }
-  .circle {
-    scale: 0.8;
-  }
-  .nav {
-    position: fixed;
-    transform: translateX(100%);
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    bottom: 0;
-    background-color: #526D82;
-    z-index: 1000;
-  }
-  .nav__item {
-    margin: 20px 0;
-    font-size: 36px;
-  }
-  .nav--active {
-    transform: translateX(0);
-  }
-  .AM-title {
-    transform: rotate(-90deg);
-    left: -4em;
-    top: -0.5em;
-  }
-  .AM-text {
-    margin-top: 2em;
-    scale: 0.9;
-    margin-left: 5px;
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  .projects {
-    scale: 0.8;
-    width: 100%;
-    justify-content: center;
-    margin-left: -1em;
-  }
-  .icons {
-    top: -12em;
-    scale: 0.8;
-  }
-  .contact__info {
-    position: relative;
-    margin-left: 1em;
-    width: 90%;
-  }
-  .contact-icon {
-    position: relative;
-    scale: 0.9;
-    margin: 60px 10px;
-  }
-  .rotating-cube-container {
-    position: relative;
-    scale: 0.9;
-    top: -4em;
-    right: 7em;
-  }
-  .contact-icon {
-    top: 0;
-    margin-right: 2px;
-    justify-content: start;
-    align-items: start;
-  }
-  .footer {
-    margin: 0;
-  }
-  .footer__box-social {
-    scale: 0.9;
-  }
-  .footer__box-title {
-    font-size: 20px;
-  }
-  .footer .wrapper {
-    padding: 2em;
-  }
-  .footer__box-desktop {
-    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
