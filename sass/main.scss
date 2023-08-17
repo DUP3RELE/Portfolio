@@ -30,6 +30,24 @@ body {
 	padding: 0;
 	overflow: hidden;
 }
+.Language-options {
+	top: 1em;
+	right: 2em;
+	font-size: 32px;
+	position: absolute;
+	display: flex;
+	span {
+		color: $grey-dark;
+	}
+	&__PL {
+		text-decoration: none;
+		color: $grey-light;
+	}
+	&__ENG {
+		text-decoration: none;
+		color: $grey-light;
+	}
+}
 
 // NAWIGACJA
 
@@ -166,7 +184,7 @@ body {
 .AM-title {
 	position: relative;
 	width: 150px;
-	height: 300px;
+	height: 310px;
 	top: 1em;
 	font-size: 64px;
 	writing-mode: vertical-rl;
@@ -440,6 +458,10 @@ body {
 	}
 }
 @media screen and (min-width: 1091px) and (max-width: 1200px) {
+	.Language-options {
+		top: 1em;
+		right: 4em;
+	}
 	.burger-btn {
 		display: block;
 	}
@@ -533,13 +555,17 @@ body {
 }
 
 @media screen and (max-width: 1090px) {
+	.Language-options {
+		top: 1em;
+		left: 1em;
+	}
 	.burger-btn {
 		display: block;
 	}
 	.title {
 		scale: 0.5;
 		left: -5em;
-		top: 2em;
+		top: 5em;
 	}
 	.circle {
 		scale: 0.6;
@@ -552,6 +578,7 @@ body {
 		scale: 0.8;
 	}
 	.nav {
+		
 		// display: none;
 		position: fixed;
 		transform: translateX(100%);

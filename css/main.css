@@ -145,6 +145,25 @@ body {
   overflow: hidden;
 }
 
+.Language-options {
+  top: 1em;
+  right: 2em;
+  font-size: 32px;
+  position: absolute;
+  display: flex;
+}
+.Language-options span {
+  color: #9DB2BF;
+}
+.Language-options__PL {
+  text-decoration: none;
+  color: #DDE6ED;
+}
+.Language-options__ENG {
+  text-decoration: none;
+  color: #DDE6ED;
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -263,7 +282,7 @@ body {
 .AM-title {
   position: relative;
   width: 150px;
-  height: 300px;
+  height: 310px;
   top: 1em;
   font-size: 64px;
   writing-mode: vertical-rl;
@@ -540,6 +559,10 @@ body {
 }
 
 @media screen and (min-width: 1091px) and (max-width: 1200px) {
+  .Language-options {
+    top: 1em;
+    right: 4em;
+  }
   .burger-btn {
     display: block;
   }
@@ -629,13 +652,17 @@ body {
   }
 }
 @media screen and (max-width: 1090px) {
+  .Language-options {
+    top: 1em;
+    left: 1em;
+  }
   .burger-btn {
     display: block;
   }
   .title {
     scale: 0.5;
     left: -5em;
-    top: 2em;
+    top: 5em;
   }
   .circle {
     scale: 0.6;

@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="Language-options">
+        <a href="" class="Language-options__PL lang-button" data-lang="pl">PL</a><span>/</span><a href="" class="Language-options__ENG lang-button" data-lang="en">ENG</a>
+    </div>
     <div id="scrollToTop" class="hidden">&#8593;</div>
     <section id="main" class="section">
         <button class="burger-btn">
@@ -29,10 +32,10 @@
 
         <nav class="nav">
             <div class="nav__items">
-                <a href="#main" class="nav__item slide-left">Strona główna</a>
-                <a href="#about-me" class="nav__item slide-left">O mnie</a>
-                <a href="#projects" class="nav__item slide-left">Projekty</a>
-                <a href="#contact" class="nav__item slide-left">Kontakt</a>
+                <a href="#main" class="nav__item slide-left" data-translate="MainSite">Strona główna</a>
+                <a href="#about-me" class="nav__item slide-left" data-translate="AboutMeNav">O mnie</a>
+                <a href="#projects" class="nav__item slide-left" data-translate="ProjectsNav">Projekty</a>
+                <a href="#contact" class="nav__item slide-left" data-translate="ContactNav">Kontakt</a>
             </div>
         </nav>
 
@@ -49,9 +52,9 @@
     </section>
     <main>
         <section id="about-me" class="section about-me-section">
-            <h1 class="AM-title">O mnie</h1>
+            <h1 class="AM-title" data-translate="AboutMeNav">O mnie</h1>
             <div class="wrapper">
-                <p class="AM-text scroll__hidden">Nazywam się Krystian Żywczak. Przez ostatnie 10 lat pracowałem w
+                <p class="AM-text scroll__hidden" data-translate="Description">Nazywam się Krystian Żywczak. Przez ostatnie 10 lat pracowałem w
                     branży
                     gastronomicznej, zarówno jako kucharz, jak i szef kuchni. Przez ten czas zdobyłem duże doświadczenie
                     w przygotowywaniu różnorodnych potraw i zarządzaniu zespołem kuchennym. Praca w gastronomii była dla
@@ -76,27 +79,27 @@
         </section>
         <div class="break"></div>
         <section class="section" id="projects">
-            <h1 class="AM-title">Projekty</h1>
+            <h1 class="AM-title" data-translate="ProjectsNav">Projekty</h1>
             <div class="wrapper">
                 <div class="projects scroll__hidden">
                     <div class="projects__course projects__common">
-                        <h2 class="projects-text">Projekty utworzone podczas kursu</h2>
+                        <h2 class="projects-text" data-translate="ProjectsCourse">Projekty utworzone podczas kursu</h2>
                         <div class="course-element element-1"><a class="element-text"
                                 href="/projects/Tropical Paradise/index.html" target="_blank"
                                 rel="noopener noreferrer">Tropical Paradise</a></div>
                         <div class="course-element element-2"><a class="element-text"
                                 href="/projects/responsywna strona internetowa/index.html" target="_blank"
-                                rel="noopener noreferrer">Responsywna strona
+                                rel="noopener noreferrer" data-translate="ProjectsCourseRSI">Responsywna strona
                                 internetowa</a></div>
                         <div class="course-element element-3"><a class="element-text"
                                 href="/projects/Zaawansowana strona internetowa/index.html" target="_blank"
-                                rel="noopener noreferrer">Zaawansowana strona
+                                rel="noopener noreferrer" data-translate="ProjectsCourseZSI">Zaawansowana strona
                                 internetowa</a></div>
                     </div>
                     <div class="projects__js">
-                        <h2 class="projects-text">Projekty w JS</h2>
+                        <h2 class="projects-text" data-translate="ProjectsJs">Projekty w JS</h2>
                         <a href="/projects/Wyszukiwarka napojów/index.html"
-                            class="projects__js--box js-nr1" target="_blank">#1 <span class="box-span">Wyszukiwarka
+                            class="projects__js--box js-nr1" target="_blank">#1 <span class="box-span" data-translate="DrinkSearch">Wyszukiwarka
                                 napojów</span>
                         </a>
                         <a href="/projects/Billsplitter/index.html"
@@ -104,30 +107,30 @@
                                 class="box-span">Billsplitter</span>
                         </a>
                         <a href="/projects/Walidator formularza/index.html"
-                            class="projects__js--box js-nr3" target="_blank">#3 <span class="box-span">Walidator
+                            class="projects__js--box js-nr3" target="_blank">#3 <span class="box-span" data-translate="WalidatorFormularza">Walidator
                                 formularza</span>
                         </a>
                         <a href="/projects/8ball/index.html" class="projects__js--box js-nr4 box-even"
                             target="_blank">#4 <span class="box-span">8ball</span></a>
                         <a href="/projects/Stoper/index.html" class="projects__js--box js-nr5"
-                            target="_blank">#5 <span class="box-span">Stoper</span></a>
+                            target="_blank">#5 <span class="box-span" data-translate="Stoper">Stoper</span></a>
                         <a href="/projects/my notes/index.html" class="projects__js--box js-nr6 box-even"
                             target="_blank">#6 <span class="box-span">my notes</span></a>
                         <a href="/projects/Exchange rate/index.html" class="projects__js--box js-nr7"
                             target="_blank">#7 <span class="box-span">Exchange rate</span></a>
                         <a href="/projects/Kalkulator wydatków/index.html"
                             class="projects__js--box js-nr8 box-even" target="_blank">#8 <span
-                                class="box-span">kalkulator
+                                class="box-span" data-translate="KalkulatorWydatków">kalkulator
                                 wydatków</span></a>
                         <a href="/projects/Czasoodmierzacz/index.html" class="projects__js--box js-nr9"
-                            target="_blank">#9 <span class="box-span">Czasomierz</span></a>
+                            target="_blank">#9 <span class="box-span" data-translate="Czasomierz">Czasomierz</span></a>
                         <a href="/projects/ToDo Lista/index.html"
-                            class="projects__js--box js-nr10 box-even" target="_blank">#10 <span class="box-span">ToDo
+                            class="projects__js--box js-nr10 box-even" target="_blank">#10 <span class="box-span" data-translate="ListaToDo">ToDo
                                 Lista</span>
                         </a>
                     </div>
                     <div class="projects__commercial">
-                        <h2 class="projects-text">Strony internetowe</h2>
+                        <h2 class="projects-text" data-translate="InternetWebsites">Strony internetowe</h2>
                         <div class="projects__commercial--box"><a href="/venue.html" target="_blank"
                                 class="element-text">Restauracja Venue  -- IN PROGRESS --</a>
                             
@@ -141,7 +144,7 @@
         </section>
         <div class="break"></div>
         <section id="contact" class="section">
-            <h1 class="AM-title">Kontakt</h1>
+            <h1 class="AM-title" data-translate="ContactNav">Kontakt</h1>
             <div class="wrapper contact__wrapper">
                 <div class="contact__info scroll__hidden">
                     <a class="links" href="mailto:fox90804@gmail.com">
@@ -183,7 +186,7 @@
         <div class="wrapper">
             <div class="footer__boxes">
                 <h3 class="footer__box-title"><i class="fa-solid fa-code"></i></i> Krystian Żywczak -- Portfolio --</h3>
-                <p>Fajnie że wpadłeś! Jeśli masz jakieś sugestie lub chcesz się skontaktować - daj znać! -</p>
+                <p data-translate="FooterText">Fajnie że wpadłeś! Jeśli masz jakieś sugestie lub chcesz się skontaktować - daj znać! -</p>
                 <div class="footer__box">
                     <div class="footer__box-social">
                         <a href="https://www.facebook.com/BorsuczaStronaZycia" target="_blank" rel="noopener noreferrer"
@@ -194,12 +197,12 @@
                             class="footer__box-link"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="footer__box-desktop">
-                        <h3 class="footer__box-title">Nawigacja</h3>
+                        <h3 class="footer__box-title" data-translate="Navigation">Nawigacja</h3>
                         <ul class="footer__box-list">
-                            <li class="footer__box-list-item"><a href="#main">Strona główna</a></li>
-                            <li class="footer__box-list-item"><a href="#about-me">O mnie</a></li>
-                            <li class="footer__box-list-item"><a href="#projects">Projekty</a></li>
-                            <li class="footer__box-list-item"><a href="#contact">Kontakt</a></li>
+                            <li class="footer__box-list-item"><a href="#main" data-translate="MainSite">Strona główna</a></li>
+                            <li class="footer__box-list-item"><a href="#about-me" data-translate="AboutMeNav">O mnie</a></li>
+                            <li class="footer__box-list-item"><a href="#projects" data-translate="ProjectsNav">Projekty</a></li>
+                            <li class="footer__box-list-item"><a href="#contact" data-translate="ContactNav">Kontakt</a></li>
                         </ul>
                     </div>
                 </div>
