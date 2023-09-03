@@ -357,8 +357,9 @@ body {
   background-position: center;
 }
 .projects .element-2 {
-  background-image: url(/img/responsywna-strona-internetowa.jpg);
+  background-image: url(/img/logo-color.png);
   background-position: center;
+  background-size: cover;
   border: 1px solid black;
 }
 .projects .element-3 {
