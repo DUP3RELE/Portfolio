@@ -418,7 +418,6 @@ body {
   background-color: #fff;
   transition: 0.5s;
   background-image: url(/img/bird-small.png);
-  filter: grayscale(100%);
   background-size: cover;
   cursor: pointer;
 }
