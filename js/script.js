@@ -96,7 +96,7 @@ x.addListener(widthCheck);
 // smooth on-scroll animations
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
-		console.log(entry);
+		// console.log(entry);
 		if (entry.isIntersecting) {
 			entry.target.classList.add("scroll__show");
 		} else {
@@ -134,7 +134,7 @@ const translations = {
 		ProjectsNav: "Projects",
 		ContactNav: "Contact",
 		ProjectsCourse: "Projects created during the course",
-		ProjectsCourseRSI: "Website created with React.js/Next.js/API",
+		ProjectsCourseRSI: "React.js/Next.js/API Website",
 		ProjectsCourseZSI: "Advanced Webiste",
 		ProjectsJs: "JS Projects",
 		InternetWebsites: "Websites Online",
@@ -181,4 +181,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 scrollObject.forEach((el) => observer.observe(el));
 navBtn.addEventListener("click", handleNav);
-window.addEventListener("mousemove", handleMouseMove);
+// window.addEventListener("mousemove", handleMouseMove);
