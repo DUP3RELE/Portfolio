@@ -1,250 +1,257 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  scroll-padding-top: 82px;
+	scroll-padding-top: 82px;
 }
 
 .price-box {
-  margin: 20px;
+	margin: 20px;
 }
 
 body {
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  background-color: #ebecf2;
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+	background-color: #ebecf2;
 }
 
 h2 {
-  text-align: center;
-  text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .underline {
-  margin: 0 auto 40px;
-  width: 60px;
-  height: 4px;
-  background-color: #039dff;
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: #039dff;
 }
 
 .blue-text {
-  color: #039dff;
+	color: #039dff;
 }
 
 .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
-  text-transform: uppercase;
-  z-index: 1;
-  transition: background-color 0.6s;
+	text-transform: uppercase;
+	z-index: 1;
+	transition: background-color 0.6s;
 }
 nav a,
 nav i {
-  color: #fff;
+	color: #fff;
 }
 nav a:hover {
-  color: #039dff;
+	color: #039dff;
 }
 nav .fa-bars {
-  padding: 10px;
+	padding: 10px;
 }
 nav .navbar-brand {
-  font-weight: bold;
+	font-weight: bold;
 }
 nav .active {
-  color: #039dff;
+	color: #039dff;
 }
 
 header {
-  color: #fff;
+	color: #fff;
 }
 header h1 {
-  font-size: 30px;
-  text-transform: uppercase;
+	font-size: 30px;
+	text-transform: uppercase;
 }
 header p {
-  font-size: 14px;
+	font-size: 14px;
 }
 header .hero-img {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/header-mini.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
+	position: relative;
+	height: 100vh;
+	background-image: url("../img/headermini.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
 }
 header .hero-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: -10;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: -10;
 }
 header .hero-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  padding: 10px;
-  text-align: center;
-  z-index: 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	padding: 10px;
+	text-align: center;
+	z-index: 5;
 }
 header .btn-outline-light {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 header .fa-chevron-down {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 20px;
-  font-size: 30px;
-  color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	font-size: 30px;
+	color: #fff;
 }
 
 .aboutus i {
-  margin-top: 20px;
-  font-size: 30px;
+	margin-top: 20px;
+	font-size: 30px;
 }
 .aboutus .aboutus-card-title {
-  font-style: 18px;
-  text-transform: uppercase;
+	font-style: 18px;
+	text-transform: uppercase;
 }
 .aboutus .aboutus-hover {
-  transition: color 0.3s;
+	transition: color 0.3s;
 }
 .aboutus .aboutus-hover:hover {
-  color: #039dff;
+	color: #039dff;
 }
-
+.card-img-top {
+	width: 100%;
+	height: 200px;
+}
 .aboutus-hero {
-  position: relative;
-  background-image: url(/img/technology-2818664_640.jpg);
-  background-position: center;
-  background-size: cover;
-  color: #ddd;
-  z-index: 0;
+	position: relative;
+	background-image: url("../img/technologysmall.jpg");
+	background-position: center;
+	background-size: cover;
+	color: #ddd;
+	z-index: 0;
 }
 .aboutus-hero .aboutus-shadow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -5;
 }
 .aboutus-hero .aboutus-hero-item {
-  margin: 10px 0;
+	margin: 10px 0;
 }
 .aboutus-hero .aboutus-hero-item i {
-  font-size: 36px;
+	font-size: 36px;
 }
 .aboutus-hero .aboutus-hero-item .aboutus-hero-title {
-  font-size: 24px;
+	font-size: 24px;
 }
 .aboutus-hero .portfolio .carousel-item {
-  position: relative;
-  height: 600px;
+	position: relative;
+	height: 600px;
 }
 .aboutus-hero .portfolio .carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 40px 0;
-  background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 40px 0;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 .aboutus-hero .portfolio .carousel-indicators {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .prices .price-box {
-  margin: 20px 10px;
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s;
+	margin: 20px 10px;
+	padding: 30px;
+	background-color: #fff;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: transform 0.3s;
 }
 .prices .price-box h3 {
-  color: #039dff;
-  text-transform: uppercase;
+	color: #039dff;
+	text-transform: uppercase;
 }
 .prices .price-box span {
-  font-weight: bold;
+	font-weight: bold;
 }
 .prices .price-box i {
-  padding: 0 5px;
-  font-style: 24px;
+	padding: 0 5px;
+	font-style: 24px;
 }
 .prices .price-box button {
-  padding: 10px 20px;
-  text-transform: uppercase;
+	padding: 10px 20px;
+	text-transform: uppercase;
 }
 .prices .price-box .price-tag {
-  font-style: 30px;
-  font-weight: bold;
+	font-style: 30px;
+	font-weight: bold;
 }
 .prices .price-box .price-info {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 .prices .price-box .price-info a {
-  text-decoration: none;
+	text-decoration: none;
 }
 .prices .price-box:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .team {
-  position: relative;
-  background-image: url(/img/office-1516329_640.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
+	position: relative;
+	background-image: url("../img/officesmall.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
 }
 .team .team-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: -5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: -5;
 }
 
 @media (min-width: 375px) {
-  header h1 {
-    font-size: 36px;
-  }
-  header p {
-    font-size: 16px;
-  }
+	header h1 {
+		font-size: 36px;
+	}
+	header p {
+		font-size: 16px;
+	}
 }
 @media (min-width: 768px) {
-  header h1 {
-    font-size: 42px;
-  }
-  header p {
-    font-size: 20px;
-  }
+	header h1 {
+		font-size: 42px;
+	}
+	header p {
+		font-size: 20px;
+	}
 }
 @media (min-width: 992px) {
-  nav {
-    height: 82px;
-  }
-  .aboutus-hero {
-    background-image: url(/img/technology-2818664.jpg);
-  }
-  .prices .price-info {
-    font-size: 18px;
-  }
+	nav {
+		height: 82px;
+	}
+	.aboutus-hero {
+		background-image: url("../img/technologybig.jpg");
+	}
+	.prices .price-info {
+		font-size: 18px;
+	}
+	.card-img-top {
+		width: 100%;
+		height: 230px;
+	}
 }
 @media (min-width: 1200px) {
-  header .hero-img {
-    background-image: url("../img/header-big.jpg");
-  }
-}/*# sourceMappingURL=main.css.map */
+	header .hero-img {
+		background-image: url("../img/headerbig.jpg");
+	}
+} /*# sourceMappingURL=main.css.map */

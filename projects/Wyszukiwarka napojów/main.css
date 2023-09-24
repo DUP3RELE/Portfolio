@@ -25,7 +25,7 @@ body {
 	height: 360px;
 	padding: 20px 40px;
 	font-family: "Dancing Script", cursive;
-	background-image: url(/pistachios-3450670_1280.jpg);
+	background-image: url('pistachios-3450670_1280.jpg');
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
